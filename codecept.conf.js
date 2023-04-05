@@ -36,7 +36,12 @@ exports.config = {
     eachElement: {
       enabled: true
     },
-    pauseOnFail: {}
+    pauseOnFail: {},
+    allure: {},
+    stepByStepReport:{
+      enabled: true,
+      screenshotsForAllureReport: true,
+    }
   },
   stepTimeout: 0,
   stepTimeoutOverride: [{

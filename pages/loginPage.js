@@ -19,6 +19,7 @@ class LoginPage {
     I.fillField(this.inputPassword, password)
     I.wait(5)
     I.click(this.submitButton)
+    I.saveScreenshot('algo.png')
   }
   validateLogin(){
     I.wait(5)

@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "npx codeceptjs run --features",
+        "test": "npx codeceptjs run --features --plugins allure",
         "test-dev": "npx codeceptjs run --grep '@probando' --verbose",
+        "show report": "allure serve output",
         "codeceptjs": "codeceptjs run --steps",
         "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
         "codeceptjs:ui": "codecept-ui --app",
